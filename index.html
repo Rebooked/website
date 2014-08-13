@@ -4,10 +4,10 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-		<title>Amunra | One Page Template</title>
+		<title>Rebooked</title>
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+		
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
@@ -25,10 +25,8 @@
 		<!-- THEME CSS -->
 		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-		<!--<link href="assets/css/color_scheme/orange.css" rel="stylesheet" type="text/css" />-->
 
-		<!-- STYLESWITCHER - REMOVE ON PRODUCTION/DEVELOPMENT -->
-		<link href="assets/css/color_scheme/pink.css" rel="alternate stylesheet" type="text/css" title="pink" />
+		
 		<!-- Morenizr -->
 		<script type="text/javascript" src="assets/plugins/modernizr.min.js"></script>
 	</head>
@@ -41,9 +39,9 @@
 			<span class="overlay"><!-- black - 0.2% transparent --></span>
 
 			<!-- background slider images -->
-			<div class="slider" style="background:url('assets/images/demo/slider/bg-6.jpg')"></div>
+			
 			<div class="slider" style="background:url('assets/images/demo/slider/bg-4.jpg')"></div>
-			<div class="slider" style="background:url('assets/images/demo/slider/bg-2.jpg')"></div>
+		
 			<div class="table">
 				<div class="table-cell">
 
@@ -52,7 +50,7 @@
 						
 
 					<!-- home text slogan / static -->
-					<h6>Turn Cancellations into Rebooked(™) Appointments</h6>
+					<h6>Turn Cancellations into Rebooked Appointments</h6>
 					<a href="#contact" class="scrollTo btn btn-default btn-lg">Sign Up</a>
 					
 				</div>
@@ -83,7 +81,8 @@
 						<ul class="nav navbar-nav navbar-right"><!-- remove scrollTo class for external/real link -->
 							<li><a class="scrollTo" href="#home">HOME</a></li>
 							<li><a class="scrollTo" href="#about">ABOUT</a></li>
-							<li><a class="scrollTo" href="#signup">SIGN UP</a></li>
+							<li><a class="scrollTo" href="#contact">SIGN UP</a></li>
+							<li><a class="scrollTo" href="#number">CONTACT</a></li>
 							<li><a class="scrollTo" href="#extra">WHY</a></li>
 							<li><a class="scrollTo" href="#work">FEEDBACK</a></li>
 							<li><a class="scrollTo" href="#team">TEAM</a></li>
@@ -100,7 +99,7 @@
 		<!-- /TOP NAV -->
 
 		<!-- FEATURED -->
-		<div class="featured three"><!-- two , three , four, five - depends on featured list - for best responsive view (or no additional class = default view) -->
+		<div id="about" class="featured three"><!-- two , three , four, five - depends on featured list - for best responsive view (or no additional class = default view) -->
 			<div class="container">
 
 				<div class="row">
@@ -131,46 +130,44 @@
 <!-- WELCOME -->
 <section id="about">
 	<div class="container">
-	<div class="row">
-		<div class="col-md-6">
-			<div class="row">
-			<header>
-			<div class="col-md-12 text-right middle">
-				<h1>WELCOME TO REBOOKED &nbsp;</h1>
-			
-				<p class="col-md-12 text-right">
-				Turn Cancellations into Rebooked(™) Appointments
-				Cancelled appointments and no-shows cost service-based businesses 15% in revenue each year. We’re here to help get that money back!  Rebooked(™) is an iOS & Android app that easily notifies clients and new prospects of cancelled appointments & no-shows so you don’t lose this income. It’s like giving yourself a 15% raise.
-
-				We’re launching Rebooked to service providers this fall.  Sign up for our beta today! 
- 				</p>
-		
-			</header>
-		</div>
-	</div>
-
-
-	<div class="col-md-6 top">
+		<div class="col-md-6 top">
 
 				<img class="img-responsive hidden-xs hidden-sm" src="assets/images/placeholder.png">
 				
+		</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="row">
+				<header>
+					<div class="col-md-12 text-left middle">
+						<h1>&nbsp; Turn Cancellations into Rebooked Appointments</h1>
+			
+						<p class="col-md-12 left-right">
+						Cancelled appointments and no-shows cost service-based businesses 15% in revenue each year. We’re here to help get that money back!  Rebooked is an iOS & Android app that easily notifies clients and new prospects of cancelled appointments & no-shows so you don’t lose this income. It’s like giving yourself a 15% raise.
+ 						</p>
+		
+				</header>
 			</div>
+		</div>
+
 	</div>
 
 </section>
-<div class="divider  hidden-sm"><!-- divider --></div>
+<div  id="contact" class="divider  hidden-sm"><!-- divider --></div>
+
 <!-- WELCOME -->
-<section id="signup">
-	<div class="container-fluid">
+<section >
+	<div class="container">
 	<div class="row">
-	<div class="col-md-12">
+	<div class="col-md-6 col-md-offset-">
 
 				<header class="">
-					<h1>SIGN UP TODAY</h1>
+					<h2>SIGN UP TODAY</h2>
 					<p class="lead nopadding nomargin">We’re launching Rebooked to service providers this fall.  Sign up for our beta today!</p>
 					
 				</header>
-
+</div>
 
 <!-- Alert -->
 	<div id="_sent_ok_" class="alert alert-success fade in fsize16 hide">
@@ -180,17 +177,20 @@
 
 				<form id="contactForm" method="post" action="php/contact.php" class="row white block form-inline margin-bottom50">
 				
-					<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-5 col-md-offset-1" style="margin-bottom:20px;">
 						<input required class="fullwidth form-control input-lg" type="text" name="contact_name" id="contact_name" value="" placeholder="NAME" title="Name" />
+						</div>
+					<div class="col-md-5 col-md-offset-1" >
 						<input required class="fullwidth form-control input-lg" type="email" name="contact_email" id="contact_email" value="" placeholder="EMAIL" title="Email" />
 						
 					</div>
 
-					<div class="col-md-4 col-md-offset-4 text-center margin-top50 ">
+					<div class="col-md-2 col-md-offset-1 text-center margin-top50 ">
 						<input type="hidden" name="captcha" id="captcha" value="" /><!-- hidden field - humans should not see it, only spam bots will see it -->
-						<button id="contact_submit" class="btn btn-primary btn-lg btn-block">SIGN UP</button>
+						<button id="contact_submit" class="btn btn-primary btn-sm btn-block">SIGN UP</button>
 					</div>
 					</form>
+					</div>
 					</div>
 				
 			</div>
@@ -203,45 +203,45 @@
 
 
 		<!-- PARALLAX -->		 <!-- parallax-1 , parallax-2 , parallax-3 , parallax-4 , parallax-default -->
-		<section class="parallax parallax-4" style="background-image:url(assets/images/demo/18.jpg);">
+		<section id="number" class="parallax parallax-4" style="background-image:url(assets/images/demo/18.jpg);">
 			<span class="overlay"></span>
 
 			<div class="container text-center">
 
-				<h1>1800 - 1234 567</h1>
+				<h2>509.263.5045</h2>
 				<a href="mailto:contact@rebooked.com" class="btn btn-default btn-lg">OR EMAIL US</a>
 
 			</div>
 		</section>
 		<!-- /PARALLAX -->
 
-<section id="extra">
-				
+<section id="extra" style="margin-bottom:-100px;">
+	<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
+					<header>
 						<h3 class="text-centered">Recover Lost Revenue & Stop Idle Time</h3>
 
 						<p>
 						Cancelled appointments and no-shows put businesses in a tough spot. Charging clients for missed appointments risks losing valued customers. Not billing a client results in lost revenue and idle time. Most businesses deal with cancellations by calling down wait-lists, emailing clients, and posting via social media. But this requires time, effort, and personnel. And it’s usually not effective. We’re here to change that!
-<br><br>
-						Rebooked makes it easy to share cancelled appointments and no-shows with existing clients and patients as well as market to a new prospects.
 						</p>
 				<br>		
-<h3 class="text-centered">Improve the Customer Experience</h3>
+				</header>
+<!--<h3 class="text-centered">Improve the Customer Experience</h3>
 <p>Everyone hates to wait. Make it easy for your clients and patients to have more flexible access to your services when cancellations happen.</p>
-
+-->
 
 					</div>
 				</div>
-			
+			</div>
 </section>
 
 <!-- PORTFOLIO -->
-		<section id="work" class="parallax parallax-2" style="background-image:url(assets/images/demo/slider/bg-4.jpg);">
+		<section id="work" class="parallax parallax-2" style="background-image:url(assets/images/demo/slider/bg-7.jpg);">
 		<span class="overlay"><!-- black - 0.2% transparent --></span>
 			<div class="container">
 				<header>
-					<h1>Feedback or Subscribe</h1>
+					<h2>Feedback or Subscribe</h2>
 					<p>help us help you send us feedback questions and/or suggestion about rebooked</p>
 					<p>Do you like what you see? <a href="">Subscribe for more</a></p>
 				</header>
@@ -263,7 +263,7 @@
 			<div class="container">
 
 				<header>
-					<h1>OUR TEAM</h1>
+					<h2>OUR TEAM</h2>
 					<p>One of the primary sources of our success is the quality and dynamic of our team. </p>
 					<p>We are safe and modern.</p>
 				</header>
