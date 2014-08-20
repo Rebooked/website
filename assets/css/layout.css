@@ -351,9 +351,9 @@ section header p {
 	margin:0; padding:0;
 }
 section  p {
-	font-size: 1.15em;
+	font-size: 1.2em;
 	font-weight: 100;
-	line-height: 30px;
+	line-height: 20px;
 	margin:0; padding:0;
 }
 section  p  b{
@@ -362,16 +362,18 @@ section  p  b{
 	line-height: 30px;
 	margin:0; padding:0;
 }
+
 section  h1 {
 	font-size: 3em;
 	font-weight: 600;
 	letter-spacing: .25pt;
-	line-height: 80px;
+	line-height: 70px;
 	margin:0; padding:0;
 }
 section  h3 {
-	font-size: 1.35em;
-	font-weight: 600;
+	font-size: 1.25em;
+	font-weight: 500;
+	line-height: 20px;
 }
 
 div.price-table {
