@@ -191,23 +191,32 @@
 				<span id="_msg_txt_"><strong>Thank You!</strong> Your message successfully sent!</span>
 			</div>
 
-				<form id="contactForm" method="post" action="php/contact.php" class="row white block form-inline margin-bottom50">
-				
-					<div class="col-md-5 col-md-offset-1" style="margin-bottom:20px;">
-						<input required class="fullwidth form-control input-lg" type="text" name="contact_name" id="contact_name" value="" placeholder="NAME" title="Name" />
-					</div>
+				<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+					<form action="//rebooked.us8.list-manage.com/subscribe/post?u=28b583ad3339e5762a6166f61&amp;id=20155fc50c" method="post" id="contactForm" name="mc-embedded-subscribe-form" class="validate row white block form-inline margin-bottom50" target="_blank" novalidate>
+						<div class="col-md-5 col-md-offset-1" style="margin-bottom:20px;">
+							<input type="text" value="" name="FNAME" placeholder="NAME" title="Name" class="required fullwidth form-control input-lg" id="mce-FNAME">
+						</div>
+						<div class="col-md-5 col-md-offset-1" >
+							<input type="email" value="" placeholder="EMAIL" title="Email" name="EMAIL" class="required fullwidth form-control input-lg email" id="mce-EMAIL">
+						</div>
 
-					<div class="col-md-5 col-md-offset-1" >
-						<input required class="fullwidth form-control input-lg" type="email" name="contact_email" id="contact_email" value="" placeholder="EMAIL" title="Email" />
-					</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 
-					<div class="col-md-2 col-md-offset-1 text-center margin-top50 ">
-						<input type="hidden" name="captcha" id="captcha" value="" /><!-- hidden field - humans should not see it, only spam bots will see it -->
-						<button id="contact_submit" class="btn btn-primary btn-sm btn-block">SIGN UP</button>
-					</div>
+					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_28b583ad3339e5762a6166f61_20155fc50c" tabindex="-1" value=""></div>
+					    
 
+						<div class="col-md-2 col-md-offset-1 text-center margin-top50 ">
+							<input type="hidden" name="captcha" id="captcha" value="" /><!-- hidden field - humans should not see it, only spam bots will see it -->
+							<button id="contact_submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-sm btn-block">SIGN UP</button>
+						</div>
 					</form>
-					
+				</div>
+				<!--End mc_embed_signup-->					
 		</div>
 		<div class="col-md-6 hidden-md hidden-lg">
 				<div id="_sent_ok_" class="alert alert-success fade in fsize16 hide">
@@ -423,7 +432,7 @@
 					</div>
 					<!-- /team member -->
 
-					<div class="col-md-4 col-sm-4 text-center">
+					<div class="col-md-push-2 col-md-4 col-sm-4 text-center">
 
 						<div class="item-box team-member">
 							<figure><!-- image, desc, social -->
@@ -457,7 +466,7 @@
 					<!-- /team member -->
 
 					<!-- team member -->
-					<div class="col-md-4 col-sm-4 text-center">
+					<div class="col-md-push-2 col-md-4 col-sm-4 text-center">
 
 						<div class="item-box team-member">
 							<figure><!-- image, desc, social -->
@@ -488,43 +497,7 @@
 						</div>
 
 					</div>
-					<!-- /team member -->
-
-					<!-- team member --
-					<div class="col-md-4 col-sm-4 text-center">
-
-						<div class="item-box team-member">
-							<figure><!-- image, desc, social --
-								<span class="item-hover">
-									<span class="overlay"></span>
-									<span class="inner">
-										<span class="block text-center">
-											<a href="#" class="social fa fa-facebook"></a>
-											<a href="#" class="social fa fa-twitter"></a>
-											<a href="#" class="social fa fa-google-plus"></a>
-											<!--
-											<a href="#" class="social fa fa-pinterest"></a>
-											<a href="#" class="social fa fa-linkedin"></a>
-											<a href="#" class="social fa fa-external-link"></a>
-											--
-										</span>
-										<span class="team-desc"></span>
-									</span>
-								</span>
-								<img class="img-responsive" src="assets/images/demo/people/fixed-height/D_Gayle.jpg" height="263" alt="">
-							</figure>
-
-							<!-- name , function --
-							<div class="item-box-desc">
-								<h4>Dan Gayle</h4>
-								<p>VP, Marketing</p>
-							</div>
-						</div>
-
-					</div>
-					/team member -->
-
-					
+					<!-- /team member -->					
 				</div>
 
 			</div>
@@ -539,7 +512,7 @@
 		<footer>
 
 			<p><!-- class="alternate" -->
-				Company LLC &bull; 2014 &bull; All Rights Reserved
+				Rebooked, Inc. &bull; 2014 &bull; All Rights Reserved
 			</p>
 
 			<div class="socials">
