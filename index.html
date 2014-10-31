@@ -25,7 +25,9 @@
 		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
 
-		
+		<!-- Mailchimp -->
+		<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+
 		<!-- Morenizr -->
 		<script type="text/javascript" src="assets/plugins/modernizr.min.js"></script>
 	</head>
@@ -183,16 +185,13 @@
 				</header>
 			</div>
 
-<!-- Alert -->
-		<div class="hidden-sm hidden-xs">
-				<div id="_sent_ok_" class="alert alert-success fade in fsize16 hide">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				<span id="_msg_txt_"><strong>Thank You!</strong> Your message successfully sent!</span>
-			</div>
-
+		<!-- Alert -->
+		<div>
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
-					<form action="//rebooked.us8.list-manage.com/subscribe/post?u=28b583ad3339e5762a6166f61&amp;id=20155fc50c" method="post" id="contactForm" name="mc-embedded-subscribe-form" class="validate row white block form-inline margin-bottom50" target="_blank" novalidate>
+					<form action="//rebooked.us8.list-manage.com/subscribe/post?u=28b583ad3339e5762a6166f61&amp;id=20155fc50c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate row white block form-inline margin-bottom50" target="_blank" novalidate>
+
+    <div id="mc_embed_signup_scroll">
 						<div class="col-md-5 col-md-offset-1" style="margin-bottom:20px;">
 							<input type="text" value="" name="FNAME" placeholder="NAME" title="Name" class="required fullwidth form-control input-lg" id="mce-FNAME">
 						</div>
@@ -200,52 +199,25 @@
 							<input type="email" value="" placeholder="EMAIL" title="Email" name="EMAIL" class="required fullwidth form-control input-lg email" id="mce-EMAIL">
 						</div>
 
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    
+						<div class="col-md-2 col-md-offset-1 text-center margin-top50 ">
+							<input type="hidden" name="captcha" id="captcha" value="" /><!-- hidden field - humans should not see it, only spam bots will see it -->
+							<input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-sm btn-block">
+						</div>
+
+					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_28b583ad3339e5762a6166f61_20155fc50c" tabindex="-1" value=""></div>
+
 						<div id="mce-responses" class="clear">
 							<div class="response" id="mce-error-response" style="display:none"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
-						</div>    
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-
-					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_28b583ad3339e5762a6166f61_20155fc50c" tabindex="-1" value=""></div>
-					    
-
-						<div class="col-md-2 col-md-offset-1 text-center margin-top50 ">
-							<input type="hidden" name="captcha" id="captcha" value="" /><!-- hidden field - humans should not see it, only spam bots will see it -->
-							<button id="contact_submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-sm btn-block">SIGN UP</button>
 						</div>
+
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_28b583ad3339e5762a6166f61_20155fc50c" tabindex="-1" value=""></div>
 					</form>
 				</div>
 				<!--End mc_embed_signup-->					
-		</div>
-		<div class="col-md-6 hidden-md hidden-lg">
-				<div id="_sent_ok_" class="alert alert-success fade in fsize16 hide">
-				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-				<span id="_msg_txt_"><strong>Thank You!</strong> Your message successfully sent!</span>
-			</div>
-
-				<form action="//rebooked.us8.list-manage.com/subscribe/post?u=28b583ad3339e5762a6166f61&amp;id=20155fc50c" method="post" id="contactForm" name="mc-embedded-subscribe-form" class="validate row white block form-inline margin-bottom50" target="_blank" novalidate>
-					<div class="col-md-5 col-md-offset-1" style="margin-bottom:20px;">
-						<input type="text" value="" name="FNAME" placeholder="NAME" title="Name" class="required fullwidth form-control input-lg" id="mce-FNAME">
-					</div>
-					<div class="col-md-5 col-md-offset-1" >
-						<input type="email" value="" placeholder="EMAIL" title="Email" name="EMAIL" class="required fullwidth form-control input-lg email" id="mce-EMAIL">
-					</div>
-
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>    
-					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-
-				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_28b583ad3339e5762a6166f61_20155fc50c" tabindex="-1" value=""></div>
-				    
-
-					<div class="col-md-2 col-md-offset-1 text-center margin-top50 ">
-						<input type="hidden" name="captcha" id="captcha" value="" /><!-- hidden field - humans should not see it, only spam bots will see it -->
-						<button id="contact_submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-sm btn-block">SIGN UP</button>
-					</div>
-				</form>
-					
 		</div>
 	</div>
 </div>
@@ -543,5 +515,6 @@
 		  ga('send', 'pageview');
 
 		</script>
+		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 	</body>
 </html>
