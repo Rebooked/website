@@ -948,6 +948,10 @@ span.progress-bar-tooltip:after {
 	border:#fff 2px solid;
 }
 
+.btn-default.btn-special:hover {
+	background: #F07057 !important;
+}
+
 /** 13. Labels
  **************************************************************** **/
 .label {
