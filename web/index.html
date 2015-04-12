@@ -19,8 +19,9 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,6 +33,15 @@
 </head>
 
 <body id="page-top" class="index">
+    <div class="topbar">
+        <div class="toggles">
+            <a class="selected" href="/" title="Rebooked for Service Providers">Business</a>
+            <a href="/dining" title="Rebooked App for service provider patrons">Patron</a>
+        </div>
+        <a id="km_signupTop" class="button orange signup right" href="/new/web">Sign Up</a>
+        <a id="km_orderTop" class="button black order right" href="/start">Get an iPad</a>
+        <div class="portal right"><a href="/portal" class="button gray login">Login</a></div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -40,16 +50,14 @@
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    menu
                 </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top"><img src="img/logo@2x.png" height="38px" /></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-left">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -65,11 +73,20 @@
                     <li class="page-scroll">
                         <a href="#contact">Support</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Download</a>
-                    </li>
                 </ul>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        Need an appointment?
+                    </li>
+                    <li class="page-scroll" style="background-color: white;">
+                        <a href="#contact" style="color: black;">Get the App!</a>
+                    </li>
+                </ul>
+            </div> -->
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
@@ -79,11 +96,12 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                <div class="col-lg-6">
+                    <img src="img/home-phone.png" />
+                </div>
+                <div class="col-lg-6">
                     <div class="intro-text">
-                        <span class="name">Start Bootstrap</span>
-                        <h1 class="skills">Turn sudden openings in your businesses’ schedule into Rebooked appointments</h1>
+                        <h1>Turn sudden openings in your businesses’ schedule into Rebooked appointments</h1>
                     </div>
                 </div>
             </div>
@@ -295,7 +313,6 @@
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
