@@ -4,6 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+html, body {
+  height: 100%;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -32,7 +36,6 @@ h4,
 h5,
 h6 {
     font-family: 'PT Sans',sans-serif;
-    font-weight: 700;
 }
 
 .img-centered {
@@ -42,6 +45,7 @@ h6 {
 header {
     color: #fff;
     background: #1DADFC;
+    height: 85%;
 }
 
 header .container {
@@ -54,22 +58,14 @@ header img {
     margin: 0 auto 20px;
 }
 
-header .intro-text .name {
-    display: block;
-    text-transform: uppercase;
-    font-family: 'PT Sans',sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-}
-
-header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
+header .tagline {
+    margin-top: 140px;
 }
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
+        /* specific height here to control the phone image on home page */
+        padding-top: 158px;
         padding-bottom: 0;
     }
 
@@ -92,11 +88,14 @@ header .intro-text .skills {
         margin-left: 40px;
     }
 
-    .navbar-nav>li {
+    .navbar-nav>li,
+    .navbar-nav>li>div.padded {
         margin-top: 15px;
     }
 
-    .navbar-nav>li>a {
+    .navbar-nav>li>a,
+    .navbar-nav>li> div.padded, {
+        padding: 15px 15px 20px;
         font-size: 1.4em;
     }
 
@@ -140,7 +139,8 @@ header .intro-text .skills {
     outline: 0;
 }
 
-.navbar-default .navbar-nav>li>a{
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li {
     color: #83D7FD;
 }
 
@@ -378,4 +378,24 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.full-height { 
+    height: 100%;
+}
+
+.home-phone {
+    background-image: url(file:///Users/michaelwilliams/Development/Rebooked/website/web/img/home-phone.png);
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+}
+
+#get-app {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#get-app > a {
+    padding: 10px;
 }
